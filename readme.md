@@ -1,0 +1,34 @@
+# Prismplayer播放器H5 demo
+
+## [体验demo](https://alilmq.github.io/Prismplayer/)
+
+
+### 安装依赖项
+
+本Demo使用了ES6、webpack、gulp等技术。
+
+ - [Node.js](https://nodejs.org/en/)
+ - [Webpack](http://webpack.github.io) 
+ - [gulp](https://gulpjs.com)
+
+```sh
+$ cd h5demo
+$ npm install
+```
+
+### 编译
+
+#### 开发环境
+
+```sh
+$ cd h5demo
+$ npm run dev
+```
+
+#### 产品环境
+
+```sh
+$ cd h5demo
+$ npm run prod
+```
+
