@@ -1,0 +1,50 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+ul
+{
+	padding:0px;
+	margin:0px;
+}
+
+ul li
+{
+    list-style-type:none;
+}
+
+.video-list
+{
+	display:flex;
+	flex-wra:wrap;
+	justify-content:space-around;
+	margin-top: 20px;
+}
+
+.video-list .video-list-item
+{
+	width:30%;
+	height:200px;
+
+}
+
+.video-list-item img
+{
+    width: 100%;
+    max-height: 200px;
+    border-radius: 2px;
+}
+
+.video-list-item img:hover
+{
+    opacity:0.8;
+    cursor: pointer;
+}
+
+.video-list-item p
+{
+	margin: 0;
+    font-size: 4px;
+}
+

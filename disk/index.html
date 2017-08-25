@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="x-ua-compatible" content="IE=edge" >
+     <meta name="viewport"   content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+     <title>H5 Demo</title>
+     <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/1.9.9/skins/default/index.css" />
+    
+    </head>
+
+    <body>
+        <div  class="prism-player" id="J_prismPlayer" style="position: relative;left:0%; width:100%; height:320px"></div>
+        <ul id="videolist" class='video-list'></ul>
+        <script src="lib/zepto.min.js"></script>
+        <script type="text/javascript" src="//g.alicdn.com/de/prismplayer/1.9.9/prism-min.js"></script>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script src="js/h5demo.min.js"></script>
+        <script> 
+
+      function autoPlay() {
+              wx.config({
+                  // 配置信息, 即使不正确也能使用 wx.ready
+                  debug: false,
+                  appId: '',
+                  timestamp: 1,
+                  nonceStr: '',
+                  signature: '',
+                  jsApiList: []
+              });
+              wx.ready(function() {
+                  var video=$(player.el()).find('video')[0];
+                  video.play();
+              });
+      };
+    // 解决ios不自动播放的问题
+    autoPlay();
+</script>
+    </body>
+</html>
+
+
+
