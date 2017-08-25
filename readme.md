@@ -1,6 +1,6 @@
 # Prismplayer播放器H5 demo
 
-## [体验demo](https://alilmq.github.io/Prismplayer/)
+## [体验demo](https://alilmq.github.io/prismplayer/)
 
 
 ### 安装依赖项
