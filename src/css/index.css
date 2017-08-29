@@ -14,12 +14,17 @@ ul li
     list-style-type:none;
 }
 
-.video-list
+.video-list-wrapper
+{
+    margin-top: 20px;
+	z-index:1000;
+}
+
+.video-list-wrapper .video-list
 {
 	display:flex;
 	flex-wra:wrap;
 	justify-content:space-around;
-	margin-top: 20px;
 }
 
 .video-list .video-list-item

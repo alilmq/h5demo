@@ -2,6 +2,7 @@
 
 ## [体验demo](https://alilmq.github.io/prismplayer/)
 
+![移动版](https://player.alicdn.com/img/h5demo.png)  
 
 ### 安装依赖项
 

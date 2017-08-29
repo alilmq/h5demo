@@ -5,6 +5,7 @@ export default class VideoPlayer
 		this.player;
 		this.props = props;
 		this._setup();
+		this._bindEvent();
 	}
 
 	loadByUrl(url)
@@ -29,9 +30,9 @@ export default class VideoPlayer
 
 	_bindEvent()
 	{
-		this.player.on('uiReady',function  (e) {
-        console.log('uiReady');
-
+		var that = this;
+		this.player.on('ready',function  (e) {
+            console.log('ready');
         });
 
         this.player.on('play',function  (e) {
@@ -51,8 +52,8 @@ export default class VideoPlayer
 
 	_unbindEvent()
 	{
-		this.player.off('uiReady',function  (e) {
-        console.log('uiReady');
+		this.player.off('ready',function  (e) {
+        console.log('ready');
 
         });
 
