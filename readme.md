@@ -1,6 +1,6 @@
-# Prismplayer播放器H5 demo
+## Prismplayer播放器H5 demo
 
-## [体验demo](https://alilmq.github.io/prismplayer/)
+## [体验demo](https://player.alicdn.com/prismplayer/)
 
 ![移动版](https://player.alicdn.com/img/h5demo.png)  
 
