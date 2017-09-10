@@ -71,7 +71,7 @@ export default class VideoComments{
 		name.text(comment.name);
 		var commentRight = row.find('.comment-right');
 		commentRight.html(comment.comment);
-		commentRight.addClass(this._getClass(comment.type));
+		commentRight.addClass(this._getClass());
 	}
 
 	_createEmptyRow() {
@@ -87,24 +87,15 @@ export default class VideoComments{
 		}
 	}
 
-	_getColor() {
-		if (this.colorIndex > 3) {
-			this.colorIndex = 1;
-		}
-		let color = comment_name_colors[this.colorIndex];
-		this.colorIndex++;
-		return color;
-	}
 
 	_getClass(type) {
-		if (type === 8)
-			return 'comment-color2'
-		else if (type === 10)
-			return 'comment-color3'
-		else if (type === 11)
-			return 'comment-color1'
-		else
-			return 'comment-color4'
+		if(this.colorIndex >4)
+		{
+			this.colorIndex = 1;
+		}
+		let className = 'comment-color'+this.colorIndex;
+		this.colorIndex ++;
+		return className;
 	}
 
 	_removeClass(ele) {
