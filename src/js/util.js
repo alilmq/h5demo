@@ -19,6 +19,6 @@ export default class Util
 
 	static screenHeight()
 	{
-		return window.screen.height || window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		return document.documentElement.clientHeight || document.body.clientHeight || window.screen.height || window.innerHeight  ;
 	}
 }
