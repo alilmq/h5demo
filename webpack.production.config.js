@@ -55,6 +55,12 @@ module.exports = {
     extensions: ['', '.js', 'scss'],
   },
   plugins: [
+    new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './src/index.html',
+        inject: 'body',
+        hash: true
+    }),
     new webpack.optimize.DedupePlugin(),
     new uglifyJsPlugin({
       compress: {
@@ -70,6 +76,18 @@ module.exports = {
       name: 'prismplayer',
       var: 'prismplayer',
       url: 'https://g.alicdn.com/de/prismplayer/1.9.9/prism-min.js'
+    },{
+      name: 'mqttws31',
+      var: 'mqttws31',
+      url: 'lib/mqttws31.js'
+    },{
+      name: 'jweixin',
+      var: 'jweixin',
+      url: 'http://res.wx.qq.com/open/js/jweixin-1.0.0.js'
+    },{
+      name: 'frozen',
+      var: 'frozen',
+      url: 'lib/frozen.min.js'
     }], {
       // Resolve local modules relative to this directory
       basedir: __dirname

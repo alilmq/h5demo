@@ -1,7 +1,11 @@
-import VideoPlayer from './js/videoplayer.js';
-import VideoList from './js/videolist.js';
+import VideoPlayer from './js/videoplayer';
+import VideoList from './js/videolist';
+import Comment from './js/comment';
+import Favoriate from './js/favoriate';
+import CommentSender from './js/commentsender';
+import util from './js/util';
 require('./css/index.css');
-
+var comment, favoriate;
 $(()=>{
 	var player = new VideoPlayer({
 	        id: 'J_prismPlayer',
@@ -37,6 +41,14 @@ $(()=>{
     	title:"马云讲新零售"
         }];
 	VideoList.setup('videolist',dataList, player);
+  CommentSender.setup();
+  var wrapper = $('.comment-list');
+  comment = new Comment(wrapper);
+  favoriate  = new Favoriate(wrapper);
+  let offset = $('.ui-tab .ui-tab-nav').offset();
+  let remainHeight = util.screenHeight() - offset.top - offset.height;
+  $('.ui-tab-content').height(remainHeight);
+  $('.comment-textbox').show();
 	function autoPlay() {
               wx.config({
                   // 配置信息, 即使不正确也能使用 wx.ready

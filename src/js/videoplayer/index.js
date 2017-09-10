@@ -38,7 +38,7 @@ export default class VideoPlayer
         this.player.on('play',function  (e) {
             console.log('play');
 
-            });
+        });
 
         this.player.on('ended',function  (e) {
             console.log('ended');

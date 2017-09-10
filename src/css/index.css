@@ -1,6 +1,14 @@
-body{
+html,
+body
+{
+  height: 100%;
 	margin:0;
 	padding:0;
+}
+
+body
+{
+  font-size:16px !important;
 }
 
 ul
@@ -14,9 +22,17 @@ ul li
     list-style-type:none;
 }
 
+.player-area
+{
+}
+
+.content-container
+{
+}
+
 .video-list-wrapper
 {
-    margin-top: 20px;
+  margin-top: 0.266667rem;
 	z-index:1000;
 }
 
@@ -30,15 +46,15 @@ ul li
 .video-list .video-list-item
 {
 	width:30%;
-	height:200px;
+	height:2.666667rem;
 
 }
 
 .video-list-item img
 {
     width: 100%;
-    max-height: 200px;
-    border-radius: 2px;
+    max-height: 2.666667rem;
+    border-radius: 0.026667rem;
 }
 
 .video-list-item img:hover
@@ -51,5 +67,226 @@ ul li
 {
 	margin: 0;
     font-size: 4px;
+}
+
+.content-container  li.comment-list {
+    height: 100%;
+    overflow: hidden;
+    clear: both;
+    z-index: 500;
+}
+
+.comment-list .comment-container {
+    position: absolute;
+    height: auto;
+    width:50%;
+    bottom:0.733333rem;
+}
+
+.comment-container .comment-row
+{
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.106667rem;
+  position: relative;
+  text-shadow: 0 0.013333rem 0.013333rem #000000;
+  filter:shadow(Color=rgba(0, 0, 0, 0.5),Direction=0.026667rem,Strength=0);
+  margin-bottom:0.053333rem;
+  float: left;
+  clear: both;
+  padding-left: 0.133333rem;
+  padding-right: 0.133333rem;
+  margin-left: 0.133333rem;
+  margin-right: 0.133333rem;
+}
+
+.comment-row .comment-left
+{
+  color:#DBDBDB;
+  line-height: 0.6rem;
+  vertical-align: top;
+}
+
+html[data-dpr="1"] .comment-row .comment-left
+{
+  font-size:14px;
+}
+
+html[data-dpr="2"] .comment-row .comment-left
+{
+   font-size: 28px;
+}
+html[data-dpr="3"] .comment-row .comment-left{
+  font-size: 42px;
+}
+
+@media all and (min-device-width:980px)
+{
+  .comment-row .comment-left
+  {
+    font-size: 28px;
+  }
+}
+
+
+
+.comment-row .comment-right
+{
+  line-height: 0.6rem;
+  margin-left:0.133333rem;
+}
+
+
+html[data-dpr="1"] .comment-row .comment-right
+{
+  font-size:14px;
+}
+
+html[data-dpr="2"] .comment-row .comment-right
+{
+   font-size: 28px;
+}
+html[data-dpr="3"] .comment-row .comment-right{
+  font-size: 42px;
+}
+
+@media all and (min-device-width:980px)
+{
+  .comment-row .comment-right
+  {
+    font-size: 28px;
+  }
+}
+
+.comment-color1
+{
+  color: rgba(255, 216, 142, 1);
+}
+
+.comment-color2
+{
+  color: rgba(255, 216, 142, 1);
+}
+
+.comment-color3
+{
+  color: rgba(182, 159, 255, 1);
+}
+
+.comment-color4
+{
+  color: rgba(255, 255, 255, 1);
+}
+
+.favorite-animation-container
+{
+	right: 50%;
+  bottom: 0.666667rem;
+  height: 90%;
+	width:2.4rem;
+  margin-left: 0.133333rem;
+	position:absolute;
+}
+
+
+.favorite-animation-container img
+{
+	position:absolute;
+	bottom:0px;
+  left:45%;
+}
+
+.favorite-animation
+{
+  animation-name: appear-from-bottom;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+  animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+/*easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);*/
+
+@keyframes appear-from-bottom {
+  0% {
+    opacity: 0.5;
+    width:0.56rem;
+    height:0.533333rem;
+    display:block;
+  }
+  10% {
+    opacity: 1;
+  }
+  20%{
+    width:1.12rem;
+    height:1.066667rem;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+  	/*900*/
+    transform: translateY(-5.6rem);
+    opacity: 0;
+    width:0.56rem;
+    height:0.533333rem;
+    display:none;
+  }
+}
+
+
+.comment-textbox{
+    height:0.666667rem;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 0.133333rem;
+    margin-right:0.133333rem;
+    margin-bottom: 0.066667rem;
+    width: 100%;
+    display:none;
+ }
+ .comment-textbox .send-container{
+      position: relative;
+      width: 100%;
+ }
+.send-container .send-txt{
+	    float:left;
+        width:80%;
+        height:0.666667rem;
+        line-height: 0.666667rem;
+        background:#fff;
+        border:0;
+        border-radius: 0.106667rem 0 0 0.106667rem;
+        resize : none;
+        color:#000;
+}
+
+.send-container .send-btn{
+      float:left;
+      height:0.666667rem;
+      background: #343B59;
+      line-height: 0.666667rem;
+      text-align: center;
+      border-radius: 0 0.106667rem 0.106667rem 0;
+      cursor: pointer;
+      color: #ffffff;
+      padding-right: 0.133333rem;
+      padding-left: 0.133333rem;
+}
+
+.send-container .send-btn:hover
+{
+    background: #343445;
+}
+
+.send-container .favoriate-send
+{
+  width:0.573333rem;
+  height:0.573333rem;
+  margin-left: 0.066667rem;
+}
+
+.send-container .favoriate-send:hover
+{
+  width:0.666667rem;
+  height:0.666667rem;
+  cursor:pointer;
 }
 
