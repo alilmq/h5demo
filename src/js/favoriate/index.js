@@ -18,7 +18,7 @@ export default class Favoriate {
 		let length = this.imgNames.length;
 		this.index = (this.index < length) ? this.index : 0;
 		name = this.imgNames[this.index];
-		let $img = $(`<img src="/images/${name}" class="favorite-animation">`);
+		let $img = $(`<img src="./images/${name}" class="favorite-animation">`);
 		this.animateContainer.append($img);
 		this.index++;
 		util.prefixedEvent($img[0], 'animationend', () => {
