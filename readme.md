@@ -1,5 +1,7 @@
 ## Prismplayer播放器H5 demo
 
+包含播放、播放列表、评论、点赞、客户端长连接mqtt等功能。
+
 ## [体验demo](https://player.alicdn.com/prismplayer/)
 
 ![移动版](https://player.alicdn.com/img/h5demo.png)  
