@@ -4,7 +4,7 @@
 
 ## [体验demo](https://player.alicdn.com/prismplayer/)
 
-![移动版](https://player.alicdn.com/prismplayer/img/h5demo1.png)  
+![移动版](https://player.alicdn.com/prismplayer/img/h5demosmall.png)  
 
 ### 安装依赖项
 
