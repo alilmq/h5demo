@@ -17,13 +17,7 @@ $(()=>{
 	        source:"//common.qupai.me/player/qupai.mp4",
 	        useH5Prism:true,
 	        useFlashPrism:false,
-	        cover: 'http://liveroom-img.oss-cn-qingdao.aliyuncs.com/logo.png',
-	        //2.0.0版本才支持
-	        extraInfo:{
-	        	'x5-video-player-type':'h5',
-	            'x5-video-ignore-metadata':true,
-	            'x5-video-player-fullscreen':true
-	        }
+	        cover: 'http://liveroom-img.oss-cn-qingdao.aliyuncs.com/logo.png'
         });
     var dataList = [{
     	url:'https://common.qupai.me/player/qupai.mp4',
