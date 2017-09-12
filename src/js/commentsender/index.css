@@ -1,0 +1,57 @@
+.comment-textbox{
+    height:0.666667rem;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 0.133333rem;
+    margin-right:0.133333rem;
+    margin-bottom: 0.066667rem;
+    width: 100%;
+    display:none;
+ }
+ .comment-textbox .send-container{
+      position: relative;
+      width: 100%;
+ }
+.send-container .send-txt{
+	    float:left;
+        width:80%;
+        height:0.666667rem;
+        line-height: 0.666667rem;
+        background:#fff;
+        border:0;
+        border-radius: 0.106667rem 0 0 0.106667rem;
+        resize : none;
+        color:#000;
+}
+
+.send-container .send-btn{
+      float:left;
+      height:0.666667rem;
+      background: #343B59;
+      line-height: 0.666667rem;
+      text-align: center;
+      border-radius: 0 0.106667rem 0.106667rem 0;
+      cursor: pointer;
+      color: #ffffff;
+      padding-right: 0.133333rem;
+      padding-left: 0.133333rem;
+}
+
+.send-container .send-btn:hover
+{
+    background: #343445;
+}
+
+.send-container .favoriate-send
+{
+  width:0.573333rem;
+  height:0.573333rem;
+  margin-left: 0.066667rem;
+}
+
+.send-container .favoriate-send:hover
+{
+  width:0.666667rem;
+  height:0.666667rem;
+  cursor:pointer;
+}

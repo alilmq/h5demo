@@ -1,4 +1,5 @@
 const itemHtml = require('./itemlist.html');
+require('./index.css');
 export  default class VideoList
 {
 	static setup(id, list, player)

@@ -1,5 +1,6 @@
 import util from '../util';
 import Event from '../events';
+require('./index.css');
 const html = require('./index.html');
 
 export default class Favoriate {

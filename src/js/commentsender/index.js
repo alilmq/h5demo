@@ -1,4 +1,5 @@
 import Event from '../events';
+require('./index.css');
 export default class CommentSender
 {
 	static setup()

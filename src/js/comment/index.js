@@ -1,6 +1,6 @@
 import VideoComments from './videocomments';
 import Event from '../events';
-
+require('./index.css');
 export default class CommentBuffer {
 	constructor(wrapper, player) {
 		this.comments = [];
