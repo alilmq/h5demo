@@ -1,6 +1,6 @@
 ## Prismplayer播放器H5 demo
 
-包含播放、播放列表、评论、点赞、客户端长连接mqtt等功能。
+包含播放、播放列表、评论、点赞、客户端长连接mqtt、支持在android微信全屏H5同层播放等功能。
 
 ## [体验demo](https://player.alicdn.com/prismplayer/)
 

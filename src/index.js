@@ -45,21 +45,4 @@ $(()=>{
   let remainHeight = util.screenHeight() - offset.top - offset.height;
   $('.ui-tab-content').height(remainHeight);
   $('.comment-textbox').show();
-	function autoPlay() {
-              wx.config({
-                  // 配置信息, 即使不正确也能使用 wx.ready
-                  debug: false,
-                  appId: '',
-                  timestamp: 1,
-                  nonceStr: '',
-                  signature: '',
-                  jsApiList: []
-              });
-              wx.ready(function() {
-                  var video=$(player.el()).find('video')[0];
-                  video.play();
-              });
-      };
-    // 解决ios不自动播放的问题
-    autoPlay();
 });

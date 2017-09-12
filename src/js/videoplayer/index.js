@@ -52,7 +52,11 @@ export default class VideoPlayer
 
 	_unbindEvent()
 	{
+		let that = this;
 		this.player.off('ready',function  (e) {
+		// 解决ios不自动播放的问题
+		if($.os.ios)
+		   that._autoPlay();
         console.log('ready');
 
         });
@@ -71,4 +75,21 @@ export default class VideoPlayer
 
             });
 	}
+
+	_autoPlay() {
+		let that = this;
+	      wx.config({
+	          // 配置信息, 即使不正确也能使用 wx.ready
+	          debug: false,
+	          appId: '',
+	          timestamp: 1,
+	          nonceStr: '',
+	          signature: '',
+	          jsApiList: []
+	      });
+	      wx.ready(function() {
+	          var video=$(that.el()).find('video')[0];
+	          video.play();
+	      });
+      };
 }
