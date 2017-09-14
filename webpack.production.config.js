@@ -95,10 +95,6 @@ module.exports = {
       var: 'mqttws31',
       url: 'lib/mqttws31.js'
     },{
-      name: 'jweixin',
-      var: 'jweixin',
-      url: 'http://res.wx.qq.com/open/js/jweixin-1.0.0.js'
-    },{
       name: 'frozen',
       var: 'frozen',
       url: 'lib/frozen.min.js'

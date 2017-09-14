@@ -48,6 +48,11 @@ export default class VideoPlayer
             console.log('pause');
 
             });
+
+		$(document).on('WeixinJSBridgeReady',function(){ 
+		   	var video=$(that.player.el()).find('video')[0];
+		    video.play();
+		});
 	}
 
 	_unbindEvent()
@@ -75,21 +80,4 @@ export default class VideoPlayer
 
             });
 	}
-
-	_autoPlay() {
-		let that = this;
-	      wx.config({
-	          // 配置信息, 即使不正确也能使用 wx.ready
-	          debug: false,
-	          appId: '',
-	          timestamp: 1,
-	          nonceStr: '',
-	          signature: '',
-	          jsApiList: []
-	      });
-	      wx.ready(function() {
-	          var video=$(that.el()).find('video')[0];
-	          video.play();
-	      });
-      };
 }

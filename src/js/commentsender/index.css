@@ -1,5 +1,5 @@
 .comment-textbox{
-    height:0.666667rem;
+    height:0.933333rem;
     position: fixed;
     bottom: 0px;
     margin-left: 0.133333rem;
@@ -14,9 +14,9 @@
  }
 .send-container .send-txt{
 	    float:left;
-        width:80%;
-        height:0.666667rem;
-        line-height: 0.666667rem;
+        width:68%;
+        height:0.933333rem;
+        line-height: 0.933333rem;
         background:#fff;
         border:0;
         border-radius: 0.106667rem 0 0 0.106667rem;
@@ -26,9 +26,10 @@
 
 .send-container .send-btn{
       float:left;
-      height:0.666667rem;
+      width:15%;
+      height:0.933333rem;
       background: #343B59;
-      line-height: 0.666667rem;
+      line-height: 0.933333rem;
       text-align: center;
       border-radius: 0 0.106667rem 0.106667rem 0;
       cursor: pointer;
@@ -44,14 +45,14 @@
 
 .send-container .favoriate-send
 {
-  width:0.573333rem;
-  height:0.573333rem;
-  margin-left: 0.066667rem;
+  width:1rem;
+  height:1rem;
+  margin-left: 0.133333rem;
+  margin-right: 0.266667rem;
 }
 
 .send-container .favoriate-send:hover
 {
-  width:0.666667rem;
-  height:0.666667rem;
+  opacity: 0.8;
   cursor:pointer;
 }

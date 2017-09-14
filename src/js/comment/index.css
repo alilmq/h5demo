@@ -9,7 +9,7 @@
     position: absolute;
     height: auto;
     width:50%;
-    bottom:0.733333rem;
+    bottom:1rem;
 }
 
 .comment-container .comment-row
@@ -31,7 +31,7 @@
 .comment-row .comment-left
 {
   color:#DBDBDB;
-  line-height: 0.6rem;
+  line-height: 0.8rem;
   vertical-align: top;
 }
 
@@ -60,7 +60,7 @@ html[data-dpr="3"] .comment-row .comment-left{
 
 .comment-row .comment-right
 {
-  line-height: 0.6rem;
+  line-height: 0.8rem;
   margin-left:0.133333rem;
 }
 
