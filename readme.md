@@ -2,9 +2,9 @@
 
 包含播放、播放列表、评论、点赞、客户端长连接mqtt、支持在android微信全屏H5同层播放等功能。
 
-## [体验demo](https://player.alicdn.com/prismplayer/)
+## [体验demo](https://player.alicdn.com/aliplayer/)
 
-![移动版](https://player.alicdn.com/prismplayer/img/h5demosmall.png)  
+![移动版](https://player.alicdn.com/aliplayer/img/h5demosmall.png)  
 
 ### 安装依赖项
 

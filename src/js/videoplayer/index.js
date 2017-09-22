@@ -25,7 +25,7 @@ export default class VideoPlayer
 
     _setup()
 	{
-		this.player = new prismplayer(this.props);
+		this.player = new Aliplayer(this.props);
 	}
 
 	_bindEvent()
@@ -48,6 +48,10 @@ export default class VideoPlayer
             console.log('pause');
 
             });
+
+        this.player.on('requestFullScreen', function(e){
+        	$(that.player.el()).removeClass('prism-fullscreen');
+        })
 
 		$(document).on('WeixinJSBridgeReady',function(){ 
 		   	var video=$(that.player.el()).find('video')[0];
