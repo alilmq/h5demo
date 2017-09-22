@@ -1,4 +1,4 @@
-
+require('./index.css');
 export default class VideoPlayer
 {
 	constructor(props) {
@@ -6,6 +6,7 @@ export default class VideoPlayer
 		this.props = props;
 		this._setup();
 		this._bindEvent();
+		this._firstFullscreen = true;
 	}
 
 	loadByUrl(url)
@@ -50,11 +51,25 @@ export default class VideoPlayer
             });
 
         this.player.on('requestFullScreen', function(e){
-        	$(that.player.el()).removeClass('prism-fullscreen');
+        	if(that._firstFullscreen)
+        	{
+        		that.player.cancelFullScreen();
+        		that._firstFullscreen = false;
+        	}
+        	else
+        	{
+        	    let video=$(that.player.el()).find('video');
+        	    video.addClass('center');
+        	}
+        });
+
+        this.player.on('cancelFullScreen', function(e){
+        	let video=$(that.player.el()).find('video');
+        	video.removeClass('center');
         })
 
 		$(document).on('WeixinJSBridgeReady',function(){ 
-		   	var video=$(that.player.el()).find('video')[0];
+		   	let video=$(that.player.el()).find('video')[0];
 		    video.play();
 		});
 	}
