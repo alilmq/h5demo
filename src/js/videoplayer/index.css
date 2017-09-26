@@ -3,3 +3,13 @@ video.center
 	object-position:50% 50% !important;
 }
 
+.prism-progress-cursor 
+{
+  margin-left:0px !important;
+}
+
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+
