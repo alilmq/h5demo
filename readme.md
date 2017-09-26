@@ -1,4 +1,4 @@
-## Prismplayer播放器H5 demo
+## Aliplayer播放器H5 demo
 
 包含播放、播放列表、评论、点赞、客户端长连接mqtt、支持在android微信全屏H5同层播放，解决android微信弹出全屏播放的问题等功能。
 
