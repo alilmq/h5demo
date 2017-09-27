@@ -6,6 +6,8 @@
 
 ## [参考文章](https://player.alicdn.com/aliplayer/docs/blogs/how-to-handle-h5-same-layer.html)
 
+## [实现介绍文章](http://www.jianshu.com/p/4ac1aa9fd087)
+
 ![移动版](https://player.alicdn.com/aliplayer/img/h5demosmall.png)  
 
 ### 安装依赖项

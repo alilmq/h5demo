@@ -31,26 +31,26 @@ export default class VideoPlayer
 
 	_bindEvent()
 	{
-		var that = this;
-		this.player.on('ready',function  (e) {
+		let that = this;
+		this.player.on('ready',  (e)=>{
             console.log('ready');
         });
 
-        this.player.on('play',function  (e) {
+        this.player.on('play',(e)=>{
             console.log('play');
 
         });
 
-        this.player.on('ended',function  (e) {
+        this.player.on('ended',(e)=>{
             console.log('ended');
 
             });
-        this.player.on('pause',function  (e) {
+        this.player.on('pause',(e)=>{
             console.log('pause');
 
             });
-
-        this.player.on('requestFullScreen', function(e){
+    
+        this.player.on('requestFullScreen', (e)=>{
         	if(that._firstFullscreen)
         	{
         		that.player.cancelFullScreen();
@@ -63,12 +63,12 @@ export default class VideoPlayer
         	}
         });
 
-        this.player.on('cancelFullScreen', function(e){
+        this.player.on('cancelFullScreen', (e)=>{
         	let video=$(that.player.el()).find('video');
         	video.removeClass('center');
         })
 
-		$(document).on('WeixinJSBridgeReady',function(){ 
+		$(document).on('WeixinJSBridgeReady',()=>{ 
 		   	let video=$(that.player.el()).find('video')[0];
 		    video.play();
 		});
