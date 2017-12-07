@@ -63,6 +63,14 @@ export default class VideoPlayer
         	}
         });
 
+        this.player.on('x5cancelFullScreen',(e)=>{
+        	let service = that.player.fullscreenService;
+        	if(service.getIsFullScreen())
+        	{
+        		service.cancelFullScreen()
+        	}
+        });
+
         this.player.on('cancelFullScreen', (e)=>{
         	let video=$(that.player.el()).find('video');
         	video.removeClass('center');
