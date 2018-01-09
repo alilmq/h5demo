@@ -10,6 +10,7 @@
 
 ![移动版](https://player.alicdn.com/aliplayer/img/h5demosmall.png)  
 
+
 ### 安装依赖项
 
 本Demo使用了ES6、webpack、gulp等技术。
