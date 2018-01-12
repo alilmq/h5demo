@@ -8,6 +8,13 @@ video.center
   margin-left:0px !important;
 }
 
+.enter-x5-player video
+{
+	object-position: 0px 30px;
+	/*height:auto !important;*/
+
+}
+
 
 video::-webkit-media-controls {
   display:none !important;

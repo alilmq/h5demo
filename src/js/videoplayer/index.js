@@ -69,12 +69,23 @@ export default class VideoPlayer
         	{
         		service.cancelFullScreen()
         	}
+             $(that.player.el()).removeClass('enter-x5-player');
+        });
+
+        this.player.on('x5requestFullScreen',(e)=>{
+            //调整视频的位置
+            $(that.player.el()).addClass('enter-x5-player');
         });
 
         this.player.on('cancelFullScreen', (e)=>{
         	let video=$(that.player.el()).find('video');
         	video.removeClass('center');
-        })
+        });
+        //微信左上角退出按钮触发是，关闭页面
+        this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
+            if(WeixinJSBridge)
+                WeixinJSBridge.call('closeWindow');
+        });
 
 		$(document).on('WeixinJSBridgeReady',()=>{ 
 		   	let video=$(that.player.el()).find('video')[0];
