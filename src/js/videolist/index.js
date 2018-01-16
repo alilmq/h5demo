@@ -21,11 +21,6 @@ export  default class VideoList
 				player.loadByUrl(url);
 			}
 		});
-
-		$('.ui-tab-nav li').click((e)=>{
-			$('.ui-tab-nav li').removeClass('current');
-			$(e.target).addClass('current');
-		});
 	}
 
 }
