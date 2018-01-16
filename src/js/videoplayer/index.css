@@ -1,4 +1,4 @@
-video.center
+.enter-x5-player video.center
 {
 	object-position:50% 50% !important;
 }
@@ -10,7 +10,7 @@ video.center
 
 .enter-x5-player video
 {
-	object-position: 0px 30px;
+	object-position: 0px 10px;
 	/*height:auto !important;*/
 
 }

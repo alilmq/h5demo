@@ -28,6 +28,8 @@ ul li
 
 .content-container
 {
+	position:absolute;
+	top:252px;
 }
 
 
