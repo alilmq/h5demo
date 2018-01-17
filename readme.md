@@ -10,12 +10,12 @@
 
 #### 直接退出程序
 
-现在当弹出全屏同层播放时， 左上角有返回按钮，当点此按钮时，会直接退出关闭页面，代码为videoplayer/index.js：
+现在当弹出全屏同层播放时， 左上角有返回按钮，当点击此按钮时，会退出后直接关闭页面，代码在videoplayer/index.js：
 
 
 ```sh
 
-//微信左上角退出按钮触发是，关闭页面
+//微信左上角退出按钮触发时关闭页面
 this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
     if(WeixinJSBridge)
         WeixinJSBridge.call('closeWindow');
@@ -23,6 +23,8 @@ this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
 
 
 ```
+
+如果不希望退出后直接关闭页面，可以在代码中对上面的代码添加注释。
 
 ### [体验demo](https://player.alicdn.com/aliplayer/)
 
@@ -46,8 +48,6 @@ $ cd h5demo
 $ npm install
 
 ```
-
-如果不希望直接退出关闭页面，可以注释上面的代码。
 
 ### 编译
 
