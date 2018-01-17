@@ -1,15 +1,16 @@
 .content-container  li.comment-list {
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     clear: both;
     z-index: 500;
+    position: relative;
 }
 
 .comment-list .comment-container {
     position: absolute;
     height: auto;
-    width:50%;
-    bottom:1rem;
+    width:60%;
+    bottom:0px;
 }
 
 .comment-container .comment-row

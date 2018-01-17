@@ -8,6 +8,7 @@ export default class CommentBuffer {
 		let that = this;
 		Event.on(Event.EventConstant.Comments_Sended, (e,data)=>{
 			this.add(data);
+			wrapper.scrollTop(wrapper[0].scrollHeight);
 		})
 	}
 
