@@ -33,7 +33,7 @@ $ npm install
 
 #### 直接退出程序
 
-现在当弹出全屏同层播放时， 左上角有返回按钮，当点此按钮时，会直接退出页面，代码为videoplayer/index.js：
+现在当弹出全屏同层播放时， 左上角有返回按钮，当点此按钮时，会直接退出关闭页面，代码为videoplayer/index.js：
 
 
 ```sh
@@ -43,9 +43,11 @@ this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
     if(WeixinJSBridge)
         WeixinJSBridge.call('closeWindow');
 });
-        
+
 
 ```
+
+如果不希望直接退出关闭页面，可以注释上面的代码。
 
 ### 编译
 
