@@ -2,29 +2,6 @@
 
 包含播放、播放列表、评论、点赞、客户端长连接mqtt、支持在android微信全屏H5同层播放，解决android微信弹出全屏播放的问题等功能。
 
-## [体验demo](https://player.alicdn.com/aliplayer/)
-
-## [参考文章](https://player.alicdn.com/aliplayer/docs/blogs/how-to-handle-h5-same-layer.html)
-
-## [实现介绍文章](http://www.jianshu.com/p/4ac1aa9fd087)
-
-![移动版](https://player.alicdn.com/aliplayer/img/h5demosmall.png)  
-
-
-### 安装依赖项
-
-本Demo使用了ES6、webpack、gulp等技术。
-
- - [Node.js](https://nodejs.org/en/)
- - [Webpack](http://webpack.github.io) 
- - [gulp](https://gulpjs.com)
-
-```sh
-$ cd h5demo
-$ npm install
-
-```
-
 ### 问题说明
 
 #### 同层播放
@@ -44,6 +21,29 @@ this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
         WeixinJSBridge.call('closeWindow');
 });
 
+
+```
+
+### [体验demo](https://player.alicdn.com/aliplayer/)
+
+### [参考文章](https://player.alicdn.com/aliplayer/docs/blogs/how-to-handle-h5-same-layer.html)
+
+### [实现介绍文章](http://www.jianshu.com/p/4ac1aa9fd087)
+
+![移动版](https://player.alicdn.com/aliplayer/img/h5demosmall.png)  
+
+
+### 安装依赖项
+
+本Demo使用了ES6、webpack、gulp等技术。
+
+ - [Node.js](https://nodejs.org/en/)
+ - [Webpack](http://webpack.github.io) 
+ - [gulp](https://gulpjs.com)
+
+```sh
+$ cd h5demo
+$ npm install
 
 ```
 
