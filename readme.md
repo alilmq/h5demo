@@ -26,9 +26,11 @@ this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
 
 如果不希望退出后直接关闭页面，可以在代码中对上面的代码添加注释。
 
+### [Aliplayer官方文档](https://help.aliyun.com/document_detail/51991.html?spm=5176.doc62941.6.704.Lcuzlc)
+
 ### [体验demo](https://player.alicdn.com/aliplayer/)
 
-### [参考文章](https://player.alicdn.com/aliplayer/docs/blogs/how-to-handle-h5-same-layer.html)
+### [参考文章](https://help.aliyun.com/document_detail/62953.html?spm=5176.doc51991.2.21.c1yAdY)
 
 ### [实现介绍文章](http://www.jianshu.com/p/4ac1aa9fd087)
 
