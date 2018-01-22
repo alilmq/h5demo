@@ -51,9 +51,10 @@ export default class VideoPlayer
             });
     
         this.player.on('requestFullScreen', (e)=>{
+            let service = that.player.fullscreenService;
         	if(that._firstFullscreen)
         	{
-        		that.player.cancelFullScreen();
+        		service.cancelFullScreen();
         		that._firstFullscreen = false;
         	}
         	else
