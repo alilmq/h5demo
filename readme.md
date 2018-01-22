@@ -71,7 +71,7 @@ $ npm run prod
 
 #### Q&A 
 
-[X5浏览器介绍](https://x5.tencent.com/tbs/guide/video.html)
+[X5浏览器同层播放介绍](https://x5.tencent.com/tbs/guide/video.html)
 
 Q：如何测试效果，确定进入了同层播放器？
 
