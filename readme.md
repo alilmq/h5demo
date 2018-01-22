@@ -69,3 +69,41 @@ $ cd h5demo
 $ npm run prod
 ```
 
+#### Q&A 
+
+[X5浏览器介绍](https://x5.tencent.com/tbs/guide/video.html)
+
+Q：如何测试效果，确定进入了同层播放器？
+
+A：安装新的tbs版本后，如果要测试效果，请杀掉微信进程，把系统时间往后调一天以上，再进入网页进行视频播放，如果微信的顶bar消失，进入了一个沉浸式的播放器，则是进了同层播放器。
+
+Q：如何查看当前的的tbs版本？
+
+A：在微信聊天窗口输入//gettbs 并发送，查看弹出的Toast上显示的tbsCoreVersion 是否等于36849 ，若是则tbs版本正确。注：这是之后进行测试的基础，这个版本一定要正确
+
+Q：接入了同层播放器，在老版本的tbs是否会出问题？
+
+A：对老版本不会产生影响。
+
+Q：同层播放器在iOS上会生效吗？
+
+A：目前的同层播放器只在Android（包括微信）上生效，暂时不支持iOS
+
+Q：同层播放器顶部”<”和“…”按钮可以去掉吗？
+
+A：不能
+
+Q: 在微信TBS里如何区是否支持同层播放器
+
+A: a)在微信等TBS里通过UA判断X5内核版本来区分,当版版本号>036849表示支持
+
+UA示例:
+
+Mozilla/5.0 (Linux; Android 4.4.4; OPPO R7 Build/KTU84P) AppleWebKit/537.36(KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.8 TBS/036849 Safari/537.36 MicroMessenger/6.3.27.861 NetType/WIFI Language/zh_CN
+
+b)在QQ浏览器Android版本中,当浏览器版本>=7.1时开始支持
+
+UA示例：
+
+UserAgent: Mozilla/5.0 (Linux. U. Android 4.4.4. zhcn. OPPO R7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/7.1 Mobile Safari/537.36
+
