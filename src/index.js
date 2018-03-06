@@ -4,6 +4,7 @@ import Comment from './js/comment';
 import Favoriate from './js/favoriate';
 import CommentSender from './js/commentsender';
 import util from './js/util';
+
 require('./css/index.css');
 var comment, favoriate;
 $(()=>{

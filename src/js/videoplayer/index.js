@@ -86,6 +86,14 @@ export default class VideoPlayer
         this.player.tag.addEventListener("x5videoexitfullscreen", ()=>{
             if(WeixinJSBridge)
                 WeixinJSBridge.call('closeWindow');
+            else
+            {
+                try
+                {
+                    window.location.refresh();
+                }catch(e)
+                {}
+            }
         });
 
 		$(document).on('WeixinJSBridgeReady',()=>{ 
